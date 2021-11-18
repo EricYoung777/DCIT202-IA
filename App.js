@@ -8,6 +8,7 @@ import Welcome from './screens/Welcome'
 import Login from './screens/Login'
 import Home from './screens/Home'
 import Cart from './screens/Cart'
+import thankyou from './screens/thankyou'
 
 export default function App() {
   const Navigation = createNativeStackNavigator()
@@ -19,6 +20,7 @@ export default function App() {
           <Navigation.Screen name="Login" component={Login}  />
           <Navigation.Screen name="Home" component={Home} />
           <Navigation.Screen name="Cart" component={Cart} />
+          <Navigation.Screen name="ThankYou" component={thankyou} />
         </Navigation.Navigator>
       </NavigationContainer>
       <StatusBar style="auto" />

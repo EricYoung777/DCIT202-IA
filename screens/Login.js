@@ -15,9 +15,9 @@ import { AntDesign } from '@expo/vector-icons'
 const imgbg: source={uri: 'https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29uJTIwaW4lMjBzdWl0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' };
 
 export default function Login({ navigation }) {
-  const [Username, onChangeUsername] = React.useState(null)
-  const [password, onChangepassword] = React.useState(null)
-  const [email, setemail] = React.useState(null)
+      const [Username, onChangeUsername] = React.useState(null)
+      const [password, onChangepassword] = React.useState(null)
+      const [email, setemail] = React.useState(null)
 
   return (
     <ImageBackground style= {{flex: 1}}source ={imgbg}>
