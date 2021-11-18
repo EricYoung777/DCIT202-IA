@@ -8,8 +8,11 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  ImageBackground,
 } from 'react-native'
 import { AntDesign } from '@expo/vector-icons'
+
+const imgbg: source={uri: 'https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29uJTIwaW4lMjBzdWl0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' };
 
 export default function Login({ navigation }) {
   const [Username, onChangeUsername] = React.useState(null)
@@ -17,8 +20,10 @@ export default function Login({ navigation }) {
   const [email, setemail] = React.useState(null)
 
   return (
-    <View style={styles.lg}>
-      <Text style={styles.signup}>Sign In</Text>
+    <ImageBackground style= {{flex: 1}}source ={imgbg}>
+     <View style={styles.lg}>
+     
+      <Text style={styles.signin}>Sign In</Text>
 
       <TextInput
         style={styles.username}
@@ -56,7 +61,7 @@ export default function Login({ navigation }) {
         </Text>
       </TouchableOpacity>
 
-      <Text style={{ color: 'black', fontSize: 14, marginTop: 10 }}>
+      <Text style={{ color: 'white', fontSize: 14, marginTop: 10 }}>
         -OR-{'\n'}
       </Text>
 
@@ -95,25 +100,25 @@ export default function Login({ navigation }) {
         }}
       >
         <AntDesign name="apple1" size={24} color="white" />
-        <Text style={{ color: '#c8c9cf', fontSize: 15, marginLeft: 15 }}>
-          SignUp with Apple
+        <Text style={{ color: '#6b56ba', fontSize: 15, marginLeft: 15 }}>
+          SignIn with Apple
         </Text>
       </TouchableOpacity>
     </View>
+   </ImageBackground>
   )
 }
 
 const styles = StyleSheet.create({
   lg: {
-    backgroundColor: '#edeff2',
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
   },
-  signup: {
+  signin: {
     alignItems: 'center',
     justifyContent: 'center',
-    color: 'black',
+    color: 'white',
     fontSize: 30,
     fontWeight: 'bold',
     marginBottom: 20,

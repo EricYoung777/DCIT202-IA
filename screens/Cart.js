@@ -1,10 +1,13 @@
 import React from 'react'
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, StyleSheet, Image, SafeAreaView } from 'react-native'
 
 export default function Cart() {
   return (
-    <View>
-      <Text>we will start working tommorow so relax for today</Text>
-    </View>
+    <SafeAreaView>
+      <View>
+         <Text>This Suit- Full of Comfort</Text>
+      </View>
+      
+    </SafeAreaView>
   )
 }

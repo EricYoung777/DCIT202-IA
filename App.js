@@ -13,10 +13,10 @@ export default function App() {
   const Navigation = createNativeStackNavigator()
   return (
     <View style={{ flex: 1 }}>
-      <NavigationContainer>
+      <NavigationContainer ScreenOptions={{headerShown:false}}>
         <Navigation.Navigator>
           <Navigation.Screen name="Welcome" component={Welcome} />
-          <Navigation.Screen name="Login" component={Login} />
+          <Navigation.Screen name="Login" component={Login}  />
           <Navigation.Screen name="Home" component={Home} />
           <Navigation.Screen name="Cart" component={Cart} />
         </Navigation.Navigator>

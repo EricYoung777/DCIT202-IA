@@ -14,7 +14,7 @@ export default function Welcome({ navigation }) {
       <Text style={styles.msg}> Welcome to GloryLife</Text>
       <TouchableOpacity style={{ marginBottom: 10 }}>
         <Text style={{ color: 'grey', fontWeight: 'italic', fontSize: 15 }}>
-          Dress up for the Work{' '}
+          Suit up for the Work{' '}
         </Text>
       </TouchableOpacity>
       <TouchableOpacity>
@@ -23,7 +23,7 @@ export default function Welcome({ navigation }) {
           style={styles.img}
           source={{
             uri:
-              'https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3VpdHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60',
+              'https://media.istockphoto.com/photos/this-one-match-perfect-with-me-picture-id1293366109?b=1&k=20&m=1293366109&s=170667a&w=0&h=2z_h2WlM3291IRKFXrdmtObnCt93rNNdNN6mqvnKD1I=',
           }}
         />
       </TouchableOpacity>
